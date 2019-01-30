@@ -51,6 +51,7 @@ public class EmployeesUpdateServlet extends HttpServlet {
 
             Boolean password_check_flag = true;
             String password = request.getParameter("password");
+
             if(password == null || password.equals("")) {
                 password_check_flag = false;
             } else {
@@ -88,6 +89,7 @@ public class EmployeesUpdateServlet extends HttpServlet {
                 response.sendRedirect(request.getContextPath() + "/employees/index");
             }
         }
+
     }
 
 }
